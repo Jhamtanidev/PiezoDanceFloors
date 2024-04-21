@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+}
+
+body{
+    background-color: #001f3f;
+    color: white;
+}
+
+.header{
+    /* width: 100%; */
+    height: 98vh;
+    background-image: url(images/hero\ bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8px;
+    position: relative;
+}
+
+.navbar nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 1%;
+    padding-left: 5%;
+}
+
+.navbar-style{
+    padding: 0;
+    margin: 0 -1%;
+    width: 99vw;
+    background-color: #001f3f;
+}
+
+.logo{
+    width: 140px;
+    cursor: pointer;
+    /* padding-left: 10vw; */
+}
+
+nav button{
+    border: 0;
+    outline: 0;
+    background-color: #EDD924;
+    color: #000000;
+    padding: 5px 20px;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 35px;
+    margin-left: 10px;   
+    cursor: pointer;
+}
+
+.nav-items{
+    display: flex;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+nav ul li {
+    padding-left: 2vw;
+    padding-right: 1vw;
+    font-weight: 500;
+    
+}
+nav a{
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s bold;
+}
+
+.header-content{
+    text-align: center;
+    margin-top: 11vh;
+}
+
+.header-content h1{
+    line-height: 70px;
+    font-size: 350%;
+    font-style: italic;
+    font-family: 'Merriweather';
+    padding-bottom: 4vh;
+}
+
+.header-content h3{
+    padding: 0 12vw;
+    font-size: 120%;
+    font-weight: 600;
+}
+
+.yellow{
+    height: 1vh;
+    background-color: #EDD924;
+}
+
+.features{
+    /* padding: 50px 12%; */
+    font-size: 20px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 7%;
+    /* background-color: black; */
+}
+
+.text-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img-col img{
+    display: block;
+    width: 90%;
+    margin: auto;
+    border-radius: 30px;
+}
+
+.features h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5vh 0;
+    font-size: 2.5rem;
+}
+
+.feat-h5{
+    display: flex;
+    justify-content: center;
+    /* max-width: 20%; */
+    align-items: center;
+    text-align: center;
+    font-size: large;
+}
+
+.textcol-feat{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
