@@ -1,137 +1,158 @@
 /* Global Styles */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap'); */
+
 body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #0D1B2A;
-  color: #fff;
+  background-color:#001F3F;
+  
+  color: white;
 }
 
 /* Header Styles */
-header {
-  background-color: #1B263B;
-  padding: 1rem;
+.header{
+  /* width: 100%; */
+  /* height: 98vh; */
+  /* background-image: url(images/hero\ bg.jpg); */
+  background-size: cover;
+  background-position: center;
+  padding: 10px 8px;
+  position: relative;
 }
 
-nav {
+.navbar nav{
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  padding: 10px 1%;
+  padding-left: 5%;
 }
 
-.logo a {
-  color: #fff;
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-decoration: none;
+.navbar-style{
+  padding: 0;
+  margin: 0 -1%;
+  width: 99vw;
+  background-color: #001f3f;
+}
+.logo{
+  width: 140px;
+  cursor: pointer;
+  /* padding-left: 10vw; */
 }
 
-nav ul {
+nav button {
+  border: 0;
+  outline: 0;
+  background-color: #EDD924;
+  font-color: #000000;
+  padding: 5px 20px;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 35px;
+  margin-left: 10px;   
+  cursor: pointer;
+}
+
+.nav-items{
+  display: flex;
+}
+
+nav ul{
   list-style-type: none;
   display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+nav ul li {
+  padding-left: 2vw;
+  padding-right: 1vw;
+  font-weight: 500;
+  
+}
+nav a{
+color: #fff;
+text-decoration: none;
+transition: color 0.3s bold;
+}
+/* Dashboard Styles */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap'); */
+
+/* body {
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #001F3F;
+} */
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 6rem;
 }
 
-nav li {
-  margin-left: 1.5rem;
+.content-section {
+  flex: 1;
+  padding-right: 2rem;
 }
 
-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-nav a:hover {
-  color: #E0E1DD;
-}
-
-/* Dashboard Styles */
-.dashboard {
-  padding: 2rem;
-}
-
-.dashboard h1 {
+.content-section h1 {
   font-size: 2.5rem;
-  margin-bottom: 2rem;
-}
-
-.statistics {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 2rem;
-}
-
-.today,
-.this-week {
-  background-color: #1B263B;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.today h2,
-.this-week h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1.5rem;
-}
-
-.chart {
-  height: 300px;
-  background-color: #0D1B2A;
-  border-radius: 8px;
-}
-
-.weekly-stats {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-gap: 1rem;
-}
-
-.stat {
-  background-color: #0D1B2A;
-  padding: 1rem;
-  text-align: center;
-  border-radius: 8px;
-}
-
-.stat h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-}
-
-.stat p {
-  font-size: 1.1rem;
-  margin: 0;
-}
-
-.stats-box {
-  background-color: #1B263B;
-  padding: 2rem;
-  text-align: center;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.stats-box h3 {
-  font-size: 1.5rem;
+  color: white;
   margin-bottom: 1rem;
 }
 
-.stats-box p {
-  font-size: 2rem;
-  margin: 0;
+.content-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: white;
 }
 
-/* Footer Styles */
-footer {
-  background-color: #1B263B;
-  padding: 1rem;
-  text-align: center;
-  color: #9BA4B5;
-  font-size: 0.9rem;
+.stats-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
 }
+
+.stat-card {
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 4px;
+  text-align: center;
+  flex: 1;
+  margin-right: 1rem;
+}
+
+.stat-card:last-child {
+  margin-right: 0;
+}
+
+.stat-card h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.stat-card p {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #4caf50;
+}
+
+.chart-container {
+  flex: 1;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  border-radius: 4px;
+}
+
+#voltageChart {
+  height: 400px;
+}
+
+.
+/* Footer Styles */

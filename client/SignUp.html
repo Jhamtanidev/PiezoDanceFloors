@@ -2,12 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign Up</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+    <title>PieTech Floors</title>
   </head>
   <body>
-    <div class="container">
+    <!-- <div class="container">
       <h1>Sign Up</h1>
       <form id="signup-form">
         <div class="form-group">
@@ -25,14 +25,36 @@
         <button type="submit">Sign Up</button>
       </form>
       <p>Already have an account? <a href="signin.html">Sign In</a></p>
-    </div>
+    </div> -->
+
+    <div class="formbox">
+      <div class="logo">
+          <img src="images/logo.png">
+      </div>
+      <h3>Sign Up</h3>
+      <div class="form" >
+          <form action="" method="post" id="signup-form">
+              <label for="name">Username</label><br>
+              <input type="text" name="name" id="username"><br>
+              <label for="email">Email Id</label> <br>
+              <input type="email" name="email" id="email"><br>
+              <label for="password">Password</label> <br>
+              <input type="password" name="password" id="password"><br>
+              <button type="submit">Sign Up</button><br>
+              <a href="SignIn.html">
+                <p style="margin: 1px;">Not registered yet?<span class="bold"> Sign In</span></p>
+            </a>
+          </form>
+          
+      </div>
+  </div>
 
     <script src="js/auth.js"></script>
     <script>
       const signupForm = document.getElementById("signup-form");
       signupForm.addEventListener("submit", async (event) => {
         event.preventDefault();
-        const name = document.getElementById("name").value;
+        const name = document.getElementById("username").value;
         const email = document.getElementById("email").value;
         const password = document.getElementById("password").value;
         try {

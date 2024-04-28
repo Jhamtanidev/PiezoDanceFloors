@@ -1,131 +1,126 @@
-/* Global Styles */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-
-body {
-  font-family: 'Montserrat', sans-serif;
+*{
   margin: 0;
   padding: 0;
-  background-color: #0D1B2A;
+  background-color: #001F3F;
+  color: white;
+  font-family: Montserrat;
+}
+.header{
+  /* height: 98vh; */
+  /* background-image: url(images/hero\ bg.jpg); */
+  /* background-size: cover;
+  background-position: center; */
+  padding: 10px 8px;
+  position: relative;
+}
+
+.navbar nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 1%;
+    padding-left: 5%;
+}
+
+.navbar-style{
+    padding: 0;
+    margin: 0 -1%;
+    width: 99vw;
+    background-color: #001f3f;
+}
+
+.logo{
+    width: 140px;
+    cursor: pointer;
+    /* padding-left: 10vw; */
+}
+
+nav button{
+    border: 0;
+    outline: 0;
+    background-color: #EDD924;
+    color: #000000;
+    padding: 5px 20px;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 35px;
+    margin-left: 10px;   
+    cursor: pointer;
+}
+
+.nav-items{
+    display: flex;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+nav ul li {
+    padding-left: 2vw;
+    padding-right: 1vw;
+    font-weight: 500;
+    
+}
+nav a{
   color: #fff;
-}
-
-/* Header Styles */
-header {
-  background-color: #1B263B;
-  padding: 1rem;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo a {
-  color: #fff;
-  font-size: 1.5rem;
-  font-weight: bold;
   text-decoration: none;
+  transition: color 0.3s bold;
 }
 
-nav ul {
-  list-style-type: none;
+
+main h1{
+  margin: 45px;
+  font-size: 45px;
+  font-weight:900;
+  text-align: center;
+}
+
+.description{
+  padding: 15px;
+  font-size: 19px;
+  line-height: 1.5;
+  max-width: 1500px;
+  text-align: center;
+}
+
+.team-members{
+  padding: 25px 50px;
   display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-nav li {
-  margin-left: 1.5rem;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-nav a:hover {
-  color: #E0E1DD;
-}
-
-/* Hero Section Styles */
-.hero {
-  padding: 4rem 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
   text-align: center;
+  gap: 100px;
 }
 
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+.member{
+  line-height: 1.5;
 }
 
-.hero p {
-  font-size: 1.2rem;
-  max-width: 800px;
-  margin: 0 auto;
+.member h3{
+  padding-top: 15px;
+  letter-spacing: 0.8px;
+  font-size: 20px;
 }
 
-/* Team Section Styles */
-.team-section {
-  padding: 4rem 2rem;
-}
-
-.team-section h2 {
-  font-size: 2.5rem;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.team-members {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 2rem;
-}
-
-.team-member {
-  background-color: #1B263B;
-  padding: 2rem;
-  text-align: center;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.team-member img {
-  width: 150px;
-  height: 150px;
+.image{
+  height: 250px;
+  width: 250px;
   border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 1rem;
+  background-color: blue;
+  overflow: hidden;
 }
 
-.team-member h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+.image img {
+  width: 100%;
+  height: auto;
 }
 
-.team-member p {
-  color: #9BA4B5;
-  margin-bottom: 1rem;
-}
-
-.social-links a {
-  color: #A5B4CB;
-  margin: 0 0.5rem;
-  font-size: 1.2rem;
-  transition: color 0.3s ease;
-}
-
-.social-links a:hover {
-  color: #E0E1DD;
-}
-
-/* Footer Styles */
-footer {
-  background-color: #1B263B;
-  padding: 1rem;
+a i{
   text-align: center;
-  color: #9BA4B5;
-  font-size: 0.9rem;
+  margin: 5px;
 }
+
+

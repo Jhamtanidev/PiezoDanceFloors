@@ -5,10 +5,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PieTech Floors</title>
   <link rel="stylesheet" href="cont.css">
+  <style>
+    body {
+      font-family: Montserrat;
+    }
+    .footer {
+      background-color: #001f3f;
+      color: #fff;
+      padding: 10px ;
+      
+      text-align: center;
+    }
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .footer-content p {
+      margin: 10px;
+    }
+    .footer-content nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .footer-content nav ul li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+    .footer-content nav ul li:last-child {
+      margin-right: 10px;
+    }
+    .footer-content nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+    img {
+      margin: 3px;
+    }
+  </style>
 </head>
 <body>
+  <header class="header">
+      <div class="navbar-style">
+        <div class="navbar">
+          <nav>
+            <img src="images/logo.png" alt="PieTech Floors" class="logo" />
+            <div class="nav-items">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html"> About Us</a></li>
+                <li>
+                  <a href="dashboard.html" id="dashboard-link"> Dashboard </a>
+                </li>
+                <li><a href="contactus.html">Contact Us</a></li>
+              </ul>
+              <button id="login-link"><a href="SignIn.html">Login</a></button>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
   <main>
-    <div class="form-container">
+    
+    <div class="form">
       <h1>PieTech Floors</h1>
       <form>
         <input type="text" placeholder="Name" />
@@ -17,10 +76,21 @@
         <button type="submit">Submit</button>
       </form>
     </div>
-    <div class="illustration-container">
-      <img src="illustration.svg" alt="Contact Us Illustration" />
-      <button class="contact-btn">Contact Us</button>
-    </div>
+   
   </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <img src="images/logo.png" />
+        <p>© 2024 PieTech Floors. All rights reserved.</p>
+        <nav>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer> 
 </body>
 </html>

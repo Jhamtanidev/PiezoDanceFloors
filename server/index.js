@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const authRoutes = require('./routes/auth');
 const apiRoutes = require('./routes/api');
 const cors = require("cors");
-
+const env = require('dotenv').config();
 const app = express();
 const port = process.env.PORT || 5500;
 
@@ -12,7 +12,7 @@ app.use(cors());
 app.use(express.json());
 
 // Database connection
-mongoose.connect('mongodb+srv://buddy:buddy123@mernapp.uhi0i9o.mongodb.net/', )
+mongoose.connect(process.env.MONGO_URL, )
 .then(() => console.log('Connected to MongoDB'))
 .catch((err) => console.error('Error connecting to MongoDB:', err));
 

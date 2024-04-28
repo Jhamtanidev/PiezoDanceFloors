@@ -1,0 +1,24 @@
+
+{
+    "salesData": [
+        {"month": "January", "sales": 1000},
+        {"month": "February", "sales": 1500},
+        {"month": "March", "sales": 2000},
+        {"month": "April", "sales": 1800},
+        {"month": "May", "sales": 2500},
+        {"month": "June", "sales": 3000}
+    ],
+    "pieData": [
+        {"category": "Electronics", "sales": 3000},
+        {"category": "Clothing", "sales": 2000},
+        {"category": "Books", "sales": 1500},
+        {"category": "Sports", "sales": 1000}
+    ],
+    "employeeData": [
+        {"name": "John", "department": "Sales", "sales": 15000},
+        {"name": "Emily", "department": "Marketing", "sales": 12000},
+        {"name": "Michael", "department": "IT", "sales": 10000},
+        {"name": "Anna", "department": "HR", "sales": 9000}
+    ]
+}
+
