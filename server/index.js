@@ -5,10 +5,19 @@ const apiRoutes = require('./routes/api');
 const cors = require("cors");
 const env = require('dotenv').config();
 const app = express();
-const port = process.env.PORT || 5500;
+const port = process.env.PORT || "https://pietechfloors.vercel.app/";
 
 // Middleware
+const allowedOrigins = ['https://your-client-domain.com', 'http://localhost:5500','*'];
+const corsOptions = {
+  origin: 'http://localhost:5500', // Replace with the actual client-side domain
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Specify the allowed HTTP methods
+  allowedHeaders: ['Content-Type', 'Authorization'], // Specify the allowed headers
+};
+
 app.use(cors());
+// app.use(cors(corsOptions));
+
 app.use(express.json());
 
 // Database connection

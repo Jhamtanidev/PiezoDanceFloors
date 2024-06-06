@@ -139,7 +139,7 @@ google.charts.load('current', {'packages':['corechart']});
 
 async function fetchVoltageData() {
   try {
-    const response = await fetch('http://localhost:8000/api/data');
+    const response = await fetch('https://pietechfloors.vercel.app/api/data');
     const data = await response.json();
     console.log(data);
     return data;
