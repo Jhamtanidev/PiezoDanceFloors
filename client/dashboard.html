@@ -47,23 +47,27 @@
   </style>
 </head>
 <body>
-  <header class="header"> 
-    <div class="navbar-style">
-    <div class="navbar">
-        <nav>
-            <img src="images/logo.png" alt="PieTech Floors" class="logo">
+  <header> 
+    <div class="header">
+      <div class="navbar-style">
+        <div class="navbar">
+          <nav>
+            <img src="images/logo.png" alt="PieTech Floors" class="logo" />
             <div class="nav-items">
-                <ul>
-                    <li><a href="index.html" >Home</a></li>
-                    <li><a href="about.html"> About Us</a></li>
-                    <li><a href="dashboard.html" id="dashboard-link"> Dashboard </a></li>
-                    <li><a href="contactus.html">Contact Us</a></li>
-                </ul>
-                <button  id="logout-link"><a href="index.html">LogOut</a></button>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html"> About Us</a></li>
+                <li>
+                  <a href="dashboard.html" id="dashboard-link"> Dashboard </a>
+                </li>
+                <li><a href="contactus.html">Contact Us</a></li>
+              </ul>
+              <button id="login-link"><a href="SignIn.html">Login</a></button>
             </div>
-        </nav>
-    </div>
-</div>
+          </nav>
+        </div>
+      </div>
+      
  </header>
 
   <!-- <div style="width: 80%; margin: 20px auto;">
@@ -135,7 +139,7 @@ google.charts.load('current', {'packages':['corechart']});
 
 async function fetchVoltageData() {
   try {
-    const response = await fetch('http://localhost:5500/api/data');
+    const response = await fetch('http://localhost:8000/api/data');
     const data = await response.json();
     console.log(data);
     return data;

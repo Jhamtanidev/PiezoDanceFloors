@@ -1,7 +1,7 @@
 // Register a new user
 async function register(name, email, password) {
     try {
-      const response = await fetch('http://localhost:5500/api/auth/register', {
+      const response = await fetch('http://localhost:8000/api/auth/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -26,7 +26,7 @@ async function register(name, email, password) {
   // Log in a user
   async function login(email, password) {
     try {
-      const response = await fetch('http://localhost:5500/api/auth/login', {
+      const response = await fetch('http://localhost:8000/api/auth/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

@@ -1,65 +1,64 @@
-/* Global Styles */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap'); */
-
-body {
-  font-family: 'Montserrat', sans-serif;
+/* Global Styles */
+* {
   margin: 0;
   padding: 0;
-  background-color:#001F3F;
-  
+  font-family: 'Montserrat';
+  /* font-weight: 500; */
+}
+
+body {
+  background-color: #001F3F;
   color: white;
 }
 
-/* Header Styles */
-.header{
-  /* width: 100%; */
-  /* height: 98vh; */
-  /* background-image: url(images/hero\ bg.jpg); */
+.header {
+  padding: 10px 8px;
   background-size: cover;
   background-position: center;
   padding: 10px 8px;
   position: relative;
 }
 
-.navbar nav{
+.navbar nav {
   display: flex;
   justify-content: space-between;
   padding: 10px 1%;
   padding-left: 5%;
 }
 
-.navbar-style{
+.navbar-style {
   padding: 0;
   margin: 0 -1%;
   width: 99vw;
   background-color: #001f3f;
 }
-.logo{
+
+.logo {
   width: 140px;
+  height: auto;
   cursor: pointer;
-  /* padding-left: 10vw; */
 }
 
 nav button {
   border: 0;
   outline: 0;
   background-color: #EDD924;
-  font-color: #000000;
-  padding: 5px 20px;
+  color: #000000;
+  padding: 2px 20px;
   font-size: 12px;
   font-weight: 700;
   border-radius: 35px;
-  margin-left: 10px;   
+  margin-left: 10px;
   cursor: pointer;
 }
 
-.nav-items{
+.nav-items {
   display: flex;
 }
 
-nav ul{
+nav ul {
   list-style-type: none;
   display: flex;
   padding-left: 10px;
@@ -68,15 +67,40 @@ nav ul{
 
 nav ul li {
   padding-left: 2vw;
+  /* font-weight: 520; */
   padding-right: 1vw;
-  font-weight: 500;
-  
+  font-type: bolder;
 }
-nav a{
-color: #fff;
-text-decoration: none;
-transition: color 0.3s bold;
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s bold;
 }
+.header-content {
+  text-align: center;
+  margin-top: 11vh;
+}
+
+.header-content h1 {
+  line-height: 70px;
+  font-size: 350%;
+  font-style: italic;
+  font-family: 'Merriweather';
+  padding-bottom: 4vh;
+}
+
+.header-content h3 {
+  padding: 0 12vw;
+  font-size: 120%;
+  font-weight: 600;
+}
+
+.yellow {
+  height: 1vh;
+  background-color: #EDD924;
+}
+
 /* Dashboard Styles */
 /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap'); */
 

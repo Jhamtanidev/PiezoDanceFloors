@@ -1,92 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
     <title>PieTech Floors</title>
-    <link rel="stylesheet" href="about.css">
-</head>
+    <link rel="stylesheet" href="about.css" />
+    <style>
+      body {
+        font-family: Montserrat;
+      }
+      .footer {
+        background-color: #001f3f;
+        color: #fff;
+        padding: 10px;
 
-<body>
- <header class="header"> 
-    <div class="navbar-style">
-    <div class="navbar">
-        <nav>
-            <img src="images/logo.png" alt="PieTech Floors" class="logo">
+        text-align: center;
+      }
+      .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .footer-content p {
+        margin: 10px;
+      }
+      .footer-content nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      .footer-content nav ul li {
+        display: inline-block;
+        margin-right: 20px;
+      }
+      .footer-content nav ul li:last-child {
+        margin-right: 10px;
+      }
+      .footer-content nav ul li a {
+        color: #fff;
+        text-decoration: none;
+      }
+      img {
+        margin: 3px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="navbar-style">
+        <div class="navbar">
+          <nav>
+            <img src="images/logo.png" alt="PieTech Floors" class="logo" />
             <div class="nav-items">
-                <ul>
-                    <li><a href="index.html" >Home</a></li>
-                    <li><a href="about.html"> About Us</a></li>
-                    <li><a href="dashboard.html" id="dashboard-link"> Dashboard </a></li>
-                    <li><a href="contactus.html">Contact Us</a></li>
-                </ul>
-                <button  id="login-link"><a href="SignIn.html">Login</a></button>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html"> About Us</a></li>
+                <li>
+                  <a href="dashboard.html" id="dashboard-link"> Dashboard </a>
+                </li>
+                <li><a href="contactus.html">Contact Us</a></li>
+              </ul>
+              <button id="login-link"><a href="SignIn.html">Login</a></button>
             </div>
-        </nav>
-    </div>
-</div>
- </header>
+          </nav>
+        </div>
+      </div>
+    </header>
     <main>
-        <h1>Meet the Team</h1>
-        <div class="team-members">
-            <div class="member">
-                <div class="image">
-                    <img src="images/ansh.png" style="filter: brightness(1)">
-                </div>
-                <h3>Ansh Surti</h3>
-                <p style="color: #EDD924; font-weight:100">IoT, Front-End & Research</p>
-                <div class="social-icons">
-                    <a href="https://github.com/ansh140903" target="_blank"><i class="fa fa-github" style="font-size: 25px;"></i></a>
-                    <a href="https://www.linkedin.com/in/ansh-surti-178764239/" target="_blank"><i class="fa fa-linkedin" style="font-size: 25px;"></i></a>
-                </div>
-            </div>
-            <div class="member">
-                <div class="image">
-                    <img src="images/k.png" style="filter: brightness(0.87);">
-                </div>
-                <h3>Krishna Gattu</h3>
-                <p style="color: #EDD924; font-weight:100">Web Design & Front-End</p>
-                <div class="social-icons">
-                    <a href="https://github.com/kgattu25" target="_blank"><i class="fa fa-github" style="font-size: 25px;"></i></a>
-                    <a href="https://www.linkedin.com/in/krishna-gattu" target="_blank"><i class="fa fa-linkedin" style="font-size: 25px;"></i></a>
-                </div>
-            </div>
-            <div class="member">
-                <div class="image">
-                    <img src="images/gb.png">
-                </div>
-                <h3>Gauri Bhatt</h3>
-                <p style="color: #EDD924; font-weight: 100">Web Design & Front-End</p>
-                <div class="social-icons">
-                    <a href="https://github.com/gaurihb" target="_blank"><i class="fa fa-github" style="font-size: 25px;"></i></a>
-                    <a href="https://www.linkedin.com/in/gauri-bhatt-603802227" target="_blank"><i class="fa fa-linkedin" style="font-size: 25px;"></i></a>
-                </div>
-            </div>
-            <div class="member">
-                <div class="image">
-                    <img src="images/dj.png">
-                </div>
-                <h3>Dev Jhamtani</h3>
-                <p style="color: #EDD924; font-weight:100">IoT & Back-End</p>
-                <div class="social-icons">
-                    <a href="https://github.com/Jhamtanidev" target="_blank"><i class="fa fa-github" style="font-size: 25px;"></i></a>
-                    <a href="https://www.linkedin.com/in/dev-jhamtani-591556218" target="_blank"><i class="fa fa-linkedin" style="font-size: 25px;"></i></a>
-                </div>
-            </div>
+      <h1>Meet the Team</h1>
+      <div class="team-members">
+        <div class="member">
+          <div class="image">
+            <img src="images/ansh.png" style="filter: brightness(1)" />
+          </div>
+          <h3>Ansh Surti</h3>
+          <p style="color: #edd924; font-weight: 100">
+            IoT, Front-End & Research
+          </p>
+          <div class="social-icons">
+            <a href="https://github.com/ansh140903" target="_blank"
+              ><i class="fa fa-github" style="font-size: 25px"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/ansh-surti-178764239/"
+              target="_blank"
+              ><i class="fa fa-linkedin" style="font-size: 25px"></i
+            ></a>
+          </div>
         </div>
-        <div>
-            <p class="description">Driven by our passion for environmental conservation, we decided to take
-                on this design engineering project which harnesses the power of piezoelectric technology to
-                create innovative dance floors that generate clean and renewable electricity with every
-                dance move.<br>We believe that the joy of dancing can power not only hearts but also the world.
-            </p>
+        <div class="member">
+          <div class="image">
+            <img src="images/k.png" style="filter: brightness(0.87)" />
+          </div>
+          <h3>Krishna Gattu</h3>
+          <p style="color: #edd924; font-weight: 100">Web Design & Front-End</p>
+          <div class="social-icons">
+            <a href="https://github.com/kgattu25" target="_blank"
+              ><i class="fa fa-github" style="font-size: 25px"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/krishna-gattu" target="_blank"
+              ><i class="fa fa-linkedin" style="font-size: 25px"></i
+            ></a>
+          </div>
         </div>
+        <div class="member">
+          <div class="image">
+            <img src="images/gauri.png" />
+          </div>
+          <h3>Gauri Bhatt</h3>
+          <p style="color: #edd924; font-weight: 100">Web Design & Front-End</p>
+          <div class="social-icons">
+            <a href="https://github.com/gaurihb" target="_blank"
+              ><i class="fa fa-github" style="font-size: 25px"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/gauri-bhatt-603802227"
+              target="_blank"
+              ><i class="fa fa-linkedin" style="font-size: 25px"></i
+            ></a>
+          </div>
+        </div>
+        <div class="member">
+          <div class="image">
+            <img src="images/dj.png" />
+          </div>
+          <h3>Dev Jhamtani</h3>
+          <p style="color: #edd924; font-weight: 100">IoT & Back-End</p>
+          <div class="social-icons">
+            <a href="https://github.com/Jhamtanidev" target="_blank"
+              ><i class="fa fa-github" style="font-size: 25px"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/dev-jhamtani-591556218"
+              target="_blank"
+              ><i class="fa fa-linkedin" style="font-size: 25px"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="description">
+          Driven by our passion for environmental conservation, we decided to
+          take on this design engineering project which harnesses the power of
+          piezoelectric technology to create innovative dance floors that
+          generate clean and renewable electricity with every dance move.<br />We
+          believe that the joy of dancing can power not only hearts but also the
+          world.
+        </p>
+      </div>
     </main>
-</body>
-
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <img src="images/logo.png" />
+          <p>© 2024 PieTech Floors. All rights reserved.</p>
+          <nav>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Use</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

@@ -6,7 +6,7 @@ ser = serial.Serial('COM5', 9600)  # Replace 'COM3' with the port Arduino is con
 ser.flushInput()
 
 # Configure server endpoint
-url = 'http://localhost:5500/api/data'  # Replace with your server endpoint
+url = 'http://localhost:8000/api/data'  # Replace with your server endpoint
 
 try:
     while True:
