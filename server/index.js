@@ -1,7 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const authRoutes = require('./routes/auth');
-const apiRoutes = require('./routes/api');
+const authRoutes = require('./api/routes/auth');
+const apiRoutes = require('./api/routes/api');
 const cors = require("cors");
 const env = require('dotenv').config();
 const app = express();
@@ -10,7 +10,7 @@ const port = process.env.PORT || "https://pietechfloors.vercel.app/";
 // Middleware
 const allowedOrigins = ['https://your-client-domain.com', 'http://localhost:5500','*'];
 const corsOptions = {
-  origin: 'http://localhost:5500', // Replace with the actual client-side domain
+  origin: 'http://localhost:5500/client/SignIn.html', // Replace with the actual client-side domain
   methods: ['GET', 'POST', 'PUT', 'DELETE'], // Specify the allowed HTTP methods
   allowedHeaders: ['Content-Type', 'Authorization'], // Specify the allowed headers
 };
