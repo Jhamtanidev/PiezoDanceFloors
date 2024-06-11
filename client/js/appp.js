@@ -1,7 +1,7 @@
 
-const dashboardLink = document.getElementById("dashboardlink");
-const logoutLink = document.querySelector('.logout-link');
-const loginLink = document.querySelector('.login-link');
+const dashboardLink = document.getElementById('dashboardlink');
+const logoutLink = document.getElementById('logout-link');
+const loginLink = document.getElementById('login-link');
 function isLoggedIn() {
   const token = localStorage.getItem('token');
   console.log('Token:', token); // Debugging log
@@ -17,24 +17,27 @@ function updateNavLinks() {
     
     dashboardLink.style.display = 'inline';
     logoutLink.style.display = 'inline';
-    loginLink.style.display = 'hidden';
+    loginLink.style.display = 'none';
   } else {
     
     console.log('User is not logged in'); // Debugging log
-    dashboardLink.style.display = 'hidden';
+    dashboardLink.style.display = 'inline';
     logoutLink.style.display = 'none';
     loginLink.style.display = 'inline';
   }
 }
 updateNavLinks();
 // Add event listeners
-// dashboardLink.addEventListener('click', (event) => {
-//   event.preventDefault();
- 
-//   if(isLoggedIn()){
-//     navigateTo('dashboard.html');
-//   };
-// });
+dashboardLink.addEventListener('click', (event) => {
+  event.preventDefault();
+
+  if(isLoggedIn()){
+    navigateTo('dashboard.html');
+  }else{
+    alert("first Login")
+    navigateTo('SignIn.html')
+  };
+});
 
 // logoutLink.addEventListener('click', (event) => {
 //   event.preventDefault();
@@ -46,8 +49,9 @@ updateNavLinks();
 logoutLink.addEventListener('click', async (event) => {
   event.preventDefault();
   await logout();
+  console.log("hh");
   updateNavLinks(); // Update the nav links after logout
-  window.location.href = 'index.html'; // Redirect the user to the home page
+  navigateTo('index.html'); // Redirect the user to the home page
 });
 async function logout() {
   try {
