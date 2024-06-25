@@ -51,7 +51,7 @@ logoutLink.addEventListener('click', async (event) => {
 });
 async function logout() {
   try {
-    await fetch('https://pietechfloors.vercel.app/api/auth/logout', {
+    await fetch('https://pizo-dance.vercel.app/api/auth/logout', {
       method: 'POST',
       headers: {
         'Authorization': `Bearer ${localStorage.getItem('token')}`

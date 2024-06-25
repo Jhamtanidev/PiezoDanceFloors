@@ -1,7 +1,7 @@
 // Register a new user
 async function register(name, email, password) {
     try {
-      const response = await fetch('https://pietechfloors.vercel.app/api/auth/register', {
+      const response = await fetch('https://pizo-dance.vercel.app/api/auth/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -26,7 +26,7 @@ async function register(name, email, password) {
   // Log in a user
   async function login(email, password) {
     try {
-      const response = await fetch('https://pietechfloors.vercel.app/api/auth/login', {
+      const response = await fetch('https://pizo-dance.vercel.app/api/auth/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

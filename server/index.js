@@ -5,7 +5,7 @@ const apiRoutes = require('./api/routes/api');
 const cors = require("cors");
 const env = require('dotenv').config();
 const app = express();
-const port = process.env.PORT || "https://pietechfloors.vercel.app/";
+const port = process.env.PORT || "https://pizo-dance.vercel.app/";
 
 // Middleware
 const allowedOrigins = ['https://your-client-domain.com', 'http://localhost:5500','*'];
